@@ -66,3 +66,4 @@ Une fois que l'envoie des mails fonctionnais, j'ai rajouté un fichier .ics, ce 
 - language PHP -> test
 - travail en condition réel
 
+![tableau de compétence](/public/assets/stage/Compétences%20E4-rempli-1.png)
