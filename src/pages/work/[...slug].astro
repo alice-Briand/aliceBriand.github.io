@@ -8,6 +8,11 @@ import Hero from '../../components/Hero.astro';
 import Icon from '../../components/Icon.astro';
 import Pill from '../../components/Pill.astro';
 
+const { slug } = Astro.params; // slug est un tableau, comme ['nested', 'maison_du_jeu']
+console.log("Slug:", slug);
+
+const fullSlug = Array.isArray(slug) ? slug.join('/') : slug;
+
 interface Props {
 	entry: CollectionEntry<'work'>;
 }
@@ -18,13 +23,14 @@ interface Props {
 export async function getStaticPaths() {
 	const work = await getCollection('work');
 	return work.map((entry) => ({
-		params: { slug: entry.slug },
+		params: { slug: entry.slug.split('/').join('/'), }, // supporte les slugs imbriqués (ex: nested/maison_du_jeu)
 		props: { entry },
 	}));
 }
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
+
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.description}>

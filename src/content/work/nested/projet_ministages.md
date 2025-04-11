@@ -1,7 +1,7 @@
 ---
 title: Ministages
 publishDate: 2020-03-04 00:00:00
-img: \assets\Ministage\logo_ministage.jpg
+img: assets\Ministage\logo_ministage.jpg
 img_alt: logo du site ministage
 description: |
   Mettre à jour et améliorer une application web

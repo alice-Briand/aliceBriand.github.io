@@ -1,7 +1,7 @@
 ---
 title: Stage de deuxieme année
 publishDate: 2020-03-02 00:00:00
-img: /assets/stage2/endi.png
+img: assets/stage2/endi.png
 img_alt: Logo du pôle sante de Nantes Université
 description: |
   Migration d'une application

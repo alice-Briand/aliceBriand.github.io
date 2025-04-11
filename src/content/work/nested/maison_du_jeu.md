@@ -1,7 +1,7 @@
 ---
 title: La maison du jeu
 publishDate: 2020-03-04 00:00:00
-img: /assets/maison_du_jeu/accueil_maison_du_jeu.png
+img: assets/maison_du_jeu/accueil_maison_du_jeu.png
 img_alt: Pearls of silky soft white cotton, bubble up under vibrant lighting
 description: |
   Application de location de jeux de societé.

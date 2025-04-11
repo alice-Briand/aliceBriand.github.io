@@ -1,7 +1,7 @@
 ---
 title: Stage de première année
 publishDate: 2020-03-02 00:00:00
-img: /assets/stage/logo-pole_sante-noir.jpg
+img: assets/stage/logo-pole_sante-noir.jpg
 img_alt: Logo du pôle sante de Nantes Université
 description: |
   Migration d'une application
@@ -66,4 +66,3 @@ Une fois que l'envoie des mails fonctionnais, j'ai rajouté un fichier .ics, ce 
 - language PHP -> test
 - travail en condition réel
 
-![tableau de compétence](/public/assets/stage/Compétences%20E4-rempli-1.png)
