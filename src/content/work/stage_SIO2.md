@@ -22,10 +22,9 @@ Lors de mon stage, J'ai créer un site web à partir des données d'une API. L'o
 
 ### Mis en contexte
 
-Endi est un site permettant de créer et gérer des devis et des factures. Le probleme est que sur le document PDF du devis à envoyer il y a un filigrame.
-Pour eviter ça, il fallait faire un tableau exel, demander la validation du client puis le refaire sur endi ce qui n'était pas pratique.
+Endi est une plateforme qui permet de créer et de gérer des devis ainsi que des factures. Le problème, c’est que les devis exportés en PDF contiennent un filigrane. Pour contourner cette contrainte, il fallait d’abord créer un tableau Excel, le faire valider par le client, puis le recréer manuellement sur Endi — une méthode peu pratique et chronophage.
 ![page PDF d'un devis](/aliceBriand.github.io/assets/stage2/exempleDevis.png)
-pour faciliter les étapes, j'ai du créer une liseuse.
+pour faciliter les étapes, j'ai créer une liseuse.
 
 ### Déroulement du stage
 
