@@ -1,7 +1,7 @@
 ---
 title: Stage de première année
 publishDate: 2020-03-02 00:00:00
-img: /public/assets/stage/logo-pole_sante-noir.jpg
+img: /assets/stage/logo-pole_sante-noir.jpg
 img_alt: Logo du pôle sante de Nantes Université
 description: |
   Migration d'une application
@@ -19,7 +19,7 @@ Lors de mon stage, je travaille sur une application en PHP qui permet d'envoyer 
 
 [Lien vers l'application](https://surveillance.sante.univ-nantes.fr/)
 
-![page d'accueil du site](/assets/stage/accueil_surveillance2.1.PNG)
+![page d'accueil du site](assets/stage/accueil_surveillance2.1.PNG)
 
 ### Déroulement du stage
 
@@ -33,7 +33,7 @@ Et après cela, j'ai remplacé la fonction de mail avec phpMailer et j'ai rajout
 
 Lors de mon stage j'ai d'abord commencé par faire des pages de test sur les classe afin de savoir si celci fonctionnais toujours sachant que l'application était en PHP 5 et que depuis PHP 7 certaines fonction sont obselette et mysql ne fonctionne plus non plus.
 
-![page de test](/public/assets/stage/pageTest1Modif.PNG)
+![page de test](/assets/stage/pageTest1Modif.PNG)
 J'ai donc créé plusieurs test en PHP dans le but de testé les méthodes comme dans l'exemple ci dessus avec la classe Surveillance.
 
 Une fois les test fait, je lance un script qui les executes et qui affiche le résultat, comme ci dessous.
