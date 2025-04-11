@@ -19,7 +19,7 @@ Lors de mon stage, je travaille sur une application en PHP qui permet d'envoyer 
 
 [Lien vers l'application](https://surveillance.sante.univ-nantes.fr/)
 
-![page d'accueil du site](assets/stage/accueil_surveillance2.1.PNG)
+![page d'accueil du site](/public/assets/stage/accueil_surveillance2.1.PNG)
 
 ### Déroulement du stage
 
