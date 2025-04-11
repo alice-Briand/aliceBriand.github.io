@@ -1,7 +1,7 @@
 ---
 title: Stage de première année
 publishDate: 2020-03-02 00:00:00
-img: assets/stage/logo-pole_sante-noir.jpg
+img: /public/assets/stage/logo-pole_sante-noir.jpg
 img_alt: Logo du pôle sante de Nantes Université
 description: |
   Migration d'une application
@@ -19,7 +19,7 @@ Lors de mon stage, je travaille sur une application en PHP qui permet d'envoyer 
 
 [Lien vers l'application](https://surveillance.sante.univ-nantes.fr/)
 
-![page d'accueil du site](/public/assets/stage/accueil_surveillance2.1.PNG)
+![page d'accueil du site](/assets/stage/accueil_surveillance2.1.PNG)
 
 ### Déroulement du stage
 
@@ -65,4 +65,5 @@ Une fois que l'envoie des mails fonctionnais, j'ai rajouté un fichier .ics, ce 
 
 - language PHP -> test
 - travail en condition réel
+
 
