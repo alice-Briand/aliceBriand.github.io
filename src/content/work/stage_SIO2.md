@@ -4,7 +4,7 @@ publishDate: 2020-03-02 00:00:00
 img: /aliceBriand.github.io/assets/stage2/endi.png
 img_alt: Logo de Endi
 description: |
-  Création d'une visionneuse
+  Amelioration du processus de facturation
 tags:
   - Stage
   - Dev
@@ -16,23 +16,26 @@ tags:
 
 ## But du stage
 
-> Création d'une visionneuse 
+> Amelioration du processus de facturation
 
 Lors de mon stage, J'ai créer un site web à partir des données d'une API. L'objectif de mon stage est donc de créer un visionneuse dans le but de faciliter le partage d'un devis ou d'une facture aux clients. 
 
 ### Mis en contexte
 
-Endi est une plateforme qui permet de créer et de gérer des devis ainsi que des factures. Le problème, c’est que les devis exportés en PDF contiennent un filigrane. Pour contourner cette contrainte, il fallait d’abord créer un tableau Excel, le faire valider par le client, puis le recréer manuellement sur Endi — une méthode peu pratique et chronophage.
+Endi est un logiciel libre developer par CAERP qui permet de créer et de gérer des devis ainsi que des factures. Le problème,
+ est l'impossibiliter des client à modifier les prix dans le cas d'un prix concient( le client estime le prix à payer pour la prestation).
+  Pour contourner cette contrainte, il fallait d’abord créer un tableur, le faire valider ou modifié par le client, puis le recréer manuellement sur Endi — une méthode peu pratique et chronophage.
 ![page PDF d'un devis](/aliceBriand.github.io/assets/stage2/exempleDevis.png)
-pour faciliter les étapes, j'ai créer une liseuse.
+pour faciliter ses étapes, j'ai créer une liseuse.
 
 ### Déroulement du stage
 
 Lors de se stage, j'ai tout d'abord commencé par mettre en place mon environnement de developpement avec l'IDE PhpStorm ainsi que xamp et un projet git.
 
-Ensuite, j'ai pris connaissance du code que l'on m'a transmit, et de mon objectif.
+Ensuite, j'ai pris connaissance du code que l'on m'a transmit et de mon objectif.
+J'ai également du prendre en mains l'api endi sur framagit grâce à un ticket sur les endpoint car il n'y avait pas de documentations.
 
-Pour gérer l'organisatin j'ai utilisé Git grace aux tickets pour permettre une meilleure gestion des taches.
+Pour gérer l'organisatin j'ai utilisé Git grace aux tickets pour permettre une meilleure gestion des taches, ainsi que pour versionner le code.
 ![exemple de tickets Git](/aliceBriand.github.io/assets/stage2/tickets_Git.png)
 
 Après cela, j'ai commencé à coder pour récupérer les données de l'API Endi afin de pouvoir les afficher sur le site. Par la suite, j'ai ajouté un formulaire permettant de modifier le tarif horaire, puis un formulaire de connexion pour accéder à la liste des devis et des factures.
@@ -48,8 +51,6 @@ Lors de mon stage j'ai d'abord commencé par créer la page en HTML ainsi qu'en 
 Et avec le CSS j'ai mis en forme la page.
 
 Une fois fait, j'ai également vérifier l'accessibilité et l'écoconception du site.
-![ecoconception](/aliceBriand.github.io/assets/)
-![accesibilité](/aliceBriand.github.io/assets/)
 
 ### Formulaire de prix concient
 
@@ -58,7 +59,7 @@ J'ai ajouté, en haut de la page, un formulaire permetant de modifier les tarif 
 ![formulaire de tarif horraire](/aliceBriand.github.io/assets/stage2/form_tarifHoraire.png)
 
 J’ai mis en place un formulaire en HTML permettant de modifier certaines données.
-Lors de la validation, un script JavaScript utilise l’API REST via la méthode fetch() avec la méthode PATCH, afin de mettre à jour les informations côté serveur.
+Lors de la validation, un script JavaScript utilise l’API REST via la méthode fetch() avec la méthode POST, puis notre serveur envoie une requete en methode PATCH à l'API endi afin de mettre à jour les informations côté serveur.
 Cette action entraîne également la mise à jour dynamique des données affichées sur la page, afin d'assurer une cohérence entre l’interface utilisateur et les données de l’API.
 
 
@@ -70,13 +71,15 @@ Pour le formulaire de connexion j'ai utilisé la methode XHR avec la methode POS
 ![pop up de connexion](/aliceBriand.github.io/assets/stage2/popUp_connexion.png)
 ![methode xhr](/aliceBriand.github.io/assets/stage2/methode_xhr_send.png)
 
-Une fois la connexion validé, on affiche la liste des devis et des factures, ainsi qu'un bouton de déconnexion.
+Une fois la connexion validé, on affiche la liste des devis et des factures en lien de partage pour faciliter l'acces au pages, ainsi qu'un bouton de déconnexion.
 
 ### deployemment
 
-Pour le déploiement, nous avons utilisé Infomaniak, avec lequel nous avons créé un site et ajouté un sous-domaine. Ensuite, nous nous sommes connectés en SSH et avons cloné le projet Git pour récuperer le projet, ce qui permet de le mettre à jour automatiquement.
+Pour le déploiement, nous avons utilisé Infomaniak, avec lequel nous avons ajouté un sous-domaine. Ensuite, 
+nous nous sommes connectés en SSH et avons cloné le projet Git pour récuperer le projet, ce qui permet de le mettre à jour automatiquement.
 
-#### Compétences aquises
+#### Compétences aquises / améliorées
 
-- language javaScript -> API REST
-- language PHP -> 
+- language JavaScript -> Fetch / XHR / FormData 
+- language PHP
+- API REST
