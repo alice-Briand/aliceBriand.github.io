@@ -1,8 +1,8 @@
 ---
 title: Ministages
 publishDate: 2020-03-04 00:00:00
-img: /aliceBriand.github.io/assets\Ministage\logo_ministage.jpg
-img_alt: logo du site ministage
+img: /aliceBriand.github.io/assets/Ministage/logo_ministage.jpg
+img_alt: Logo du site Ministage
 description: |
   Mettre à jour et améliorer une application web
 tags:
@@ -10,44 +10,61 @@ tags:
   - PHP
   - Groupe
   - Symfony
-  - framagit
+  - Framagit
 ---
 
 ## Objectif du projet
 
 > Mettre à jour une application web et l'améliorer.
 
-Pour ce projet, nous avons récupéré une application réalisé par un stagiaire en 2015.
-Nous avons travaillés avec notre porteur de projet Mr Mordelet.
+Pour ce projet, nous avons récupéré une application réalisée par un stagiaire en 2015.  
+Nous avons travaillé avec notre porteur de projet, M. Mordelet. Le but du projet était de corriger les bugs, de mettre à jour et d'améliorer le site (création d'une version Symfony).  
 <br></br>
 
 ![page de login](/aliceBriand.github.io/assets/Ministage/login_ministage.png)
 
 ### Organisation du travail
-Pour se projet nous avons utilisé la méthode agile, nous devions donc régulièrement présenter nos évolutions à notre porteur de projet.
 
-Pour commencer, nous nous sommes séparés en 4 groupe dans le but de chaqu'un s'occuper d'un profil de connexion (mon groupe c'est occupé du profil Consultation) pour savoir comment il fonctionne et comprendre comment .
+Ce n’est qu’après cette première phase que nous avons commencé à coder.
 
-Nous avons ensuite pris connaissance de l'architecture du site, de la base de données, puis nous avons présenté se que nous avions compris au porteur de projet.
+Pour ce projet, nous avons utilisé la méthode agile, ce qui impliquait de présenter régulièrement nos avancées à notre porteur de projet.
+
+Nous avons commencé la première semaine par une prise de connaissance du code et de l’architecture du site. Répartis en groupes, chacun s’est chargé de l’un des 4 profils de connexion.  
+Mon groupe s’est occupé du profil **Consultation**, ce qui nous a permis de bien comprendre le fonctionnement de Ministage44. Nous avons ensuite présenté ce que nous avions compris au porteur de projet.
 
 ![cartographie de l'application](/aliceBriand.github.io/assets/Ministage/cartographie.png)
 
-Seulement après ça, nous avons commencé a coder.
+Après ce premier sprint, nous avons commencé à coder et à corriger les bugs présents.
 
+Puis, nous avons entamé le développement d’une nouvelle version de Ministage44 sous Symfony.
 
-### Partage des taches
+### Partage des tâches
 
-pour le partages des taches nous avons créé des tickets sur le repertoir du projet. Nous nous somme donc répartie seul ou en groupe sur les taches a réaliser.
+Pour le partage des tâches, nous avons créé des tickets listant les bugs (plus ou moins critiques) ainsi que les améliorations à apporter, sur le dépôt Git du projet.  
+Nous nous sommes répartis seuls ou en petits groupes les différentes tâches à réaliser.
 
 ![ticket git](/aliceBriand.github.io/assets/Ministage/ticket.png)
 
-### Correction de bug
+### Correction de bugs
 
-Tout au long de l'année nous avons corrigé de nombreux bug que notre porteur de projet nous faisait pare comme par exemple l'envoie de mail qui ne fonctionnais pas.
+Tout au long de l’année, nous avons corrigé de nombreux bugs signalés par notre porteur de projet.  
+Par exemple, l’envoi de mails ne fonctionnait pas, ce qui ne répondait pas aux attentes des utilisateurs.
+
+Pour cela, on choisissait un ticket disponible, on identifiait le problème dans le code, puis on proposait une solution pour le résoudre.
+
+### Symfony
+
+Après avoir résolu la majorité des problèmes du site, une partie de la classe s’est lancée dans le développement d’une nouvelle version de Ministage44 à l’aide du framework Symfony.
+
+Cela nous a permis de repartir de zéro afin de réécrire le code de manière plus claire, ainsi que de refondre la base de données, qui présentait plusieurs problèmes.
+
+Pour la répartition du travail, nous avons créé un nouveau dépôt Git avec de nouveaux tickets, puis, par petits groupes, nous avons développé les **contrôleurs** ainsi que les **vues**.
 
 ## Compétences
 
-compétence travaillé lors de ce projet :
-- PHP
-- git
-- Travail de groupe
+Compétences travaillées lors de ce projet :
+
+- PHP  
+- Git  
+- Travail en groupe  
+- Symfony
