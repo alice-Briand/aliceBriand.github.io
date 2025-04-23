@@ -2,7 +2,7 @@
 title: Stage de première année
 publishDate: 2020-03-02 00:00:00
 img: /aliceBriand.github.io/assets/stage/logo-pole_sante-noir.jpg
-img_alt: Logo du pôle sante de Nantes Université
+img_alt: Logo du pôle santé de Nantes Université
 description: |
   Migration d'une application
 tags:
@@ -13,9 +13,11 @@ tags:
 
 ## But du stage
 
-> Migration d'une application plus ajout d'une function.
+> Migration d'une application et ajout d'une fonctionnalité.
 
-Lors de mon stage, je travaille sur une application en PHP qui permet d'envoyer des mails de convocation pour surveiller des examens. L'objectif de mon stage est donc que je migre cette applicatin sur un nouveau serveur ainsi que rajouter une fonction. Pour cela je dois d'abord verifier 
+Lors de mon stage, j’ai travaillé sur une application en PHP permettant d’envoyer des mails de convocation pour surveiller des examens.  
+L’objectif de mon stage était donc de migrer cette application vers un nouveau serveur, ainsi que d’ajouter une nouvelle fonctionnalité.  
+Pour cela, j’ai d’abord dû vérifier le bon fonctionnement du code.
 
 [Lien vers l'application](https://surveillance.sante.univ-nantes.fr/)
 
@@ -23,47 +25,52 @@ Lors de mon stage, je travaille sur une application en PHP qui permet d'envoyer 
 
 ### Déroulement du stage
 
-Lors de se stage, j'ai tout d'abord commencé par mettre en place mon environnement de developpement en installant un IDE puis un debuggeur PHP, ainsi que un lien Git.
+Lors de ce stage, j’ai d’abord mis en place mon environnement de développement en installant un IDE, un débogueur PHP, ainsi qu’un lien Git.
 
-Ensuite, j'ai pris connaissance du code, d'une application déjâ faite, que l'on m'a transmit. Puis j'ai réalisé des tests unitaire afin de voir si le le code fonctionnais toujours.
+Ensuite, j’ai pris connaissance du code d’une application déjà existante, qui m’a été transmise.  
+J’ai ensuite réalisé des tests unitaires afin de vérifier que le code fonctionnait toujours correctement.
 
-Et après cela, j'ai remplacé la fonction de mail avec phpMailer et j'ai rajouté un fichier .ics.
+Par la suite, j’ai remplacé la fonction d’envoi de mails par **phpMailer**, et j’ai ajouté la génération d’un fichier **.ics**.
 
-### Tester les classes
+### Tests des classes
 
-Lors de mon stage j'ai d'abord commencé par faire des pages de test sur les classe afin de savoir si celci fonctionnais toujours sachant que l'application était en PHP 5 et que depuis PHP 7 certaines fonction sont obselette et mysql ne fonctionne plus non plus.
+J’ai commencé par créer des pages de test sur les classes pour vérifier leur bon fonctionnement, sachant que l’application était en PHP 5 et que, depuis PHP 7, certaines fonctions sont devenues obsolètes.  
+De plus, `mysql` n’est plus pris en charge.
 
 ![page de test](/aliceBriand.github.io/assets/stage/pageTest1Modif.PNG)
-J'ai donc créé plusieurs test en PHP dans le but de testé les méthodes comme dans l'exemple ci dessus avec la classe Surveillance.
 
-Une fois les test fait, je lance un script qui les executes et qui affiche le résultat, comme ci dessous.
+J’ai donc créé plusieurs tests en PHP dans le but de tester les méthodes, comme dans l’exemple ci-dessus avec la classe **Surveillance**.
+
+Une fois les tests créés, je lançais un script qui les exécutait et affichait les résultats :
+
 ![page de test](/aliceBriand.github.io/assets/stage/resultat_testModif.PNG)
 
-J'ai fait face à differentes erreurs, comme ci-dessous, que j'ai du corrigé.
-![erreur, pas autant d'argument donné que demandé](/aliceBriand.github.io/assets/stage/exemple_erreur1.PNG)
-![valeur de sortie differrente de celle attendu](/aliceBriand.github.io/assets/stage/exemple_erreur2.PNG)
+J’ai rencontré différentes erreurs, comme celles ci-dessous, que j’ai dû corriger :
 
-Et j'ai parfois du modifier le code principale car celui-ci ne fonctionnais pas 
-![function modifier](/aliceBriand.github.io/assets/stage/code_modifier1.PNG)
-![function modifier](/aliceBriand.github.io/assets/stage/code_modifier.PNG)
-Dans l’exemple ci-dessus, le code ne fonctionnais pas car le code essayait d’exécuter deux requêtes en même temps. J’ai donc refait le code en effectuant les deux requêtes séparément.
+![erreur, pas autant d'arguments donnés que demandés](/aliceBriand.github.io/assets/stage/exemple_erreur1.PNG)  
+![valeur de sortie différente de celle attendue](/aliceBriand.github.io/assets/stage/exemple_erreur2.PNG)
 
+Parfois, j’ai même dû modifier le **code principal** car certaines parties ne fonctionnaient pas :
 
+![fonction modifiée](/aliceBriand.github.io/assets/stage/code_modifier1.PNG)  
+![fonction modifiée](/aliceBriand.github.io/assets/stage/code_modifier.PNG)
 
-### Envoie des mails
+Dans cet exemple, le code ne fonctionnait pas car il essayait d’exécuter deux requêtes SQL en même temps.  
+J’ai donc modifié le code pour effectuer les deux requêtes séparément.
 
-Après avoir effectué les différents tests, j'ai modifier les pages d'envoie de mail.
-pour envoyer des mail j'ai utilisé phpMailer et j'ai donc écrit le code dont j'avais besoin.
+### Envoi des mails
+
+Après avoir effectué les différents tests, j’ai modifié les pages d’envoi de mails.  
+Pour cela, j’ai utilisé **phpMailer** et réécrit le code nécessaire.
+
 ![code de PHPMailer](/aliceBriand.github.io/assets/stage/PHPMailer.PNG)
 
-Une fois que l'envoie des mails fonctionnais, j'ai rajouté un fichier .ics, ce qui permet d'avoir un lien qui met directement l'evenement du mail dans l'agenda lorsque ont l'ouvre.
-![code de fichier .ics](/aliceBriand.github.io/assets/stage/ics0.PNG)
+Une fois l’envoi des mails fonctionnel, j’ai ajouté un fichier **.ics** (fichier d’agenda).  
+Cela permet d’avoir un lien dans le mail qui ajoute directement l’événement dans l’agenda du destinataire.
 
+![code du fichier .ics](/aliceBriand.github.io/assets/stage/ics0.PNG)
 
+## Compétences acquises
 
-#### Compétences aquises
-
-- language PHP -> test
-- travail en condition réel
-
-
+- Langage PHP → Tests unitaires, maintenance de code existant  
+- Travail en condition réelle (application en production)

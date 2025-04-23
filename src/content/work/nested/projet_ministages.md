@@ -23,25 +23,30 @@ Nous avons travaillé avec notre porteur de projet, M. Mordelet. Le but du proje
 
 ![page de login](/aliceBriand.github.io/assets/Ministage/login_ministage.png)
 
-### Organisation du travail
+### Contexte
 
-Ce n’est qu’après cette première phase que nous avons commencé à coder.
+Ministage44 est un site web réalisé par un stagiaire en 2015. Il permet à des élèves de collège ou de lycée d’effectuer des ministages dans des établissements, dans le but de découvrir de nouvelles formations.
+
+### Organisation du travail
 
 Pour ce projet, nous avons utilisé la méthode agile, ce qui impliquait de présenter régulièrement nos avancées à notre porteur de projet.
 
-Nous avons commencé la première semaine par une prise de connaissance du code et de l’architecture du site. Répartis en groupes, chacun s’est chargé de l’un des 4 profils de connexion.  
+Nous avons commencé par installer notre environnement de travail :  
+nous avons utilisé **XAMPP** pour avoir la bonne version de PHP, ainsi que l’IDE **PhpStorm** et **DBeaver** pour accéder à la base de données.
+
+La première semaine a été consacrée à la prise de connaissance du code et de l’architecture du site. Répartis en groupes, chacun s’est chargé de l’un des 4 profils de connexion.  
 Mon groupe s’est occupé du profil **Consultation**, ce qui nous a permis de bien comprendre le fonctionnement de Ministage44. Nous avons ensuite présenté ce que nous avions compris au porteur de projet.
 
 ![cartographie de l'application](/aliceBriand.github.io/assets/Ministage/cartographie.png)
 
-Après ce premier sprint, nous avons commencé à coder et à corriger les bugs présents.
+Après ce premier sprint, nous avons commencé à coder et à corriger les bugs existants.
 
 Puis, nous avons entamé le développement d’une nouvelle version de Ministage44 sous Symfony.
 
 ### Partage des tâches
 
-Pour le partage des tâches, nous avons créé des tickets listant les bugs (plus ou moins critiques) ainsi que les améliorations à apporter, sur le dépôt Git du projet.  
-Nous nous sommes répartis seuls ou en petits groupes les différentes tâches à réaliser.
+Pour le partage des tâches, nous avons créé des tickets répertoriant les bugs (plus ou moins critiques) ainsi que les améliorations à apporter, sur le dépôt Git du projet.  
+Nous nous sommes répartis les différentes tâches à réaliser, seuls ou en petits groupes.
 
 ![ticket git](/aliceBriand.github.io/assets/Ministage/ticket.png)
 
@@ -50,19 +55,19 @@ Nous nous sommes répartis seuls ou en petits groupes les différentes tâches �
 Tout au long de l’année, nous avons corrigé de nombreux bugs signalés par notre porteur de projet.  
 Par exemple, l’envoi de mails ne fonctionnait pas, ce qui ne répondait pas aux attentes des utilisateurs.
 
-Pour cela, on choisissait un ticket disponible, on identifiait le problème dans le code, puis on proposait une solution pour le résoudre.
+Pour cela, nous choisissions un ticket disponible, identifions le problème dans le code, puis proposions une solution pour le résoudre.
 
-Suite aux correction nous avions une recontre avec notre porteur de projet pour lui montrer nos modification et réaliser le déploiment.
+Après chaque correction, nous avions une rencontre avec notre porteur de projet pour lui présenter nos modifications et procéder au déploiement.
 
 ### Symfony
 
-Après avoir résolu la majorité des problèmes du site, une partie de la classe s’est lancée dans le développement d’une nouvelle version de Ministage44 à l’aide du framework Symfony.
+Après avoir résolu la majorité des problèmes du site, une partie de la classe s’est lancée dans le développement d’une nouvelle version de Ministage44 à l’aide du framework **Symfony**.
 
-Cela nous a permis de repartir de zéro afin de réécrire le code de manière plus claire, ainsi que de refondre la base de données, qui présentait plusieurs problèmes.
+Cela nous a permis de repartir de zéro, afin de réécrire le code de manière plus claire et de refondre la base de données, qui présentait plusieurs problèmes.
 
-Pour la répartition du travail, nous avons créé un nouveau dépôt Git avec de nouveaux tickets, puis, par petits groupes, nous avons développé les **contrôleurs** ainsi que les **vues**.
+Pour la répartition du travail, nous avons créé un nouveau dépôt Git avec de nouveaux tickets. Par petits groupes, nous avons développé les **contrôleurs** ainsi que les **vues**.
 
-On à également recréer une page de connéxion et une gestion des accès sur les routes.
+Nous avons également recréé une **page de connexion** et mis en place une **gestion des accès** sur les routes.
 
 ## Compétences
 
