@@ -52,6 +52,8 @@ Par exemple, l’envoi de mails ne fonctionnait pas, ce qui ne répondait pas au
 
 Pour cela, on choisissait un ticket disponible, on identifiait le problème dans le code, puis on proposait une solution pour le résoudre.
 
+Suite aux correction nous avions une recontre avec notre porteur de projet pour lui montrer nos modification et réaliser le déploiment.
+
 ### Symfony
 
 Après avoir résolu la majorité des problèmes du site, une partie de la classe s’est lancée dans le développement d’une nouvelle version de Ministage44 à l’aide du framework Symfony.
@@ -59,6 +61,8 @@ Après avoir résolu la majorité des problèmes du site, une partie de la class
 Cela nous a permis de repartir de zéro afin de réécrire le code de manière plus claire, ainsi que de refondre la base de données, qui présentait plusieurs problèmes.
 
 Pour la répartition du travail, nous avons créé un nouveau dépôt Git avec de nouveaux tickets, puis, par petits groupes, nous avons développé les **contrôleurs** ainsi que les **vues**.
+
+On à également recréer une page de connéxion et une gestion des accès sur les routes.
 
 ## Compétences
 
